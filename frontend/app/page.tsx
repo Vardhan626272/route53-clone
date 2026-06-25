@@ -1,0 +1,17 @@
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+
+import { LoadingState } from "@/components/ui/LoadingState";
+import { isAuthenticated } from "@/lib/auth";
+
+export default function HomePage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace(isAuthenticated() ? "/dashboard" : "/login");
+  }, [router]);
+
+  return <LoadingState label="Redirecting..." />;
+}

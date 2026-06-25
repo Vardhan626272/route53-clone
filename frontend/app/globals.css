@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --aws-header: #232f3e;
+  --aws-sidebar: #232f3e;
+  --aws-orange: #ff9900;
+  --aws-link: #0073bb;
+  --aws-bg: #eaeded;
+  --aws-surface: #ffffff;
+  --aws-border: #d5dbdb;
+  --aws-text: #16191f;
+  --aws-text-secondary: #545b64;
+  --aws-muted: #879596;
+}
+
+@theme inline {
+  --color-aws-header: var(--aws-header);
+  --color-aws-sidebar: var(--aws-sidebar);
+  --color-aws-orange: var(--aws-orange);
+  --color-aws-link: var(--aws-link);
+  --color-aws-bg: var(--aws-bg);
+  --color-aws-surface: var(--aws-surface);
+  --color-aws-border: var(--aws-border);
+  --color-aws-text: var(--aws-text);
+  --color-aws-text-secondary: var(--aws-text-secondary);
+  --color-aws-muted: var(--aws-muted);
+  --font-sans: "Segoe UI", "Amazon Ember", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: var(--aws-bg);
+  color: var(--aws-text);
+  font-family: var(--font-sans);
+}
+
+a {
+  color: inherit;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
